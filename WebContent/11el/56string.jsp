@@ -7,11 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>삼항 연산자</h1>
-<%
-pageContext.setAttribute("age", 18);
-%>
+<h1>string</h1>
 
-<p>${(age>18) ? "old enough" : "too young"}</p>
+<p>${param.name == "donald"}</p>
+<p>${param.name == 'donald'}</p>
 </body>
 </html>

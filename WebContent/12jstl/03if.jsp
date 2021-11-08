@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,11 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>삼항 연산자</h1>
-<%
-pageContext.setAttribute("age", 18);
-%>
+<h1>jstl core if 연습</h1>
 
-<p>${(age>18) ? "old enough" : "too young"}</p>
+<c:if test="${param.food eq 'apple'}">
+	<p>사과</p>
+</c:if>
 </body>
 </html>
